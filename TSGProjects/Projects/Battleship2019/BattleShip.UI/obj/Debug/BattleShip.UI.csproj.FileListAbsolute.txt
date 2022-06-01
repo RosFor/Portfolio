@@ -1,0 +1,10 @@
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Battleship2019\BattleShip.UI\bin\Debug\BattleShip.UI.exe.config
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Battleship2019\BattleShip.UI\bin\Debug\BattleShip.UI.exe
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Battleship2019\BattleShip.UI\bin\Debug\BattleShip.UI.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Battleship2019\BattleShip.UI\bin\Debug\BattleShip.BLL.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Battleship2019\BattleShip.UI\bin\Debug\BattleShip.BLL.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Battleship2019\BattleShip.UI\obj\Debug\BattleShip.UI.csprojAssemblyReference.cache
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Battleship2019\BattleShip.UI\obj\Debug\BattleShip.UI.csproj.CoreCompileInputs.cache
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Battleship2019\BattleShip.UI\obj\Debug\BattleShip.UI.csproj.CopyComplete
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Battleship2019\BattleShip.UI\obj\Debug\BattleShip.UI.exe
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Battleship2019\BattleShip.UI\obj\Debug\BattleShip.UI.pdb

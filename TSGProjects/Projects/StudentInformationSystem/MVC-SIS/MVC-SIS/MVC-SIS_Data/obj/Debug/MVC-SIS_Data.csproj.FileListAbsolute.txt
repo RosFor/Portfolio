@@ -1,0 +1,9 @@
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\StudentInformationSystem\MVC-SIS\MVC-SIS\MVC-SIS_Data\bin\Debug\MVC-SIS_Data.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\StudentInformationSystem\MVC-SIS\MVC-SIS\MVC-SIS_Data\bin\Debug\MVC-SIS_Data.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\StudentInformationSystem\MVC-SIS\MVC-SIS\MVC-SIS_Data\bin\Debug\MVC-SIS_Models.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\StudentInformationSystem\MVC-SIS\MVC-SIS\MVC-SIS_Data\bin\Debug\MVC-SIS_Models.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\StudentInformationSystem\MVC-SIS\MVC-SIS\MVC-SIS_Data\obj\Debug\MVC-SIS_Data.csprojAssemblyReference.cache
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\StudentInformationSystem\MVC-SIS\MVC-SIS\MVC-SIS_Data\obj\Debug\MVC-SIS_Data.csproj.CoreCompileInputs.cache
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\StudentInformationSystem\MVC-SIS\MVC-SIS\MVC-SIS_Data\obj\Debug\MVC-SIS_Data.csproj.CopyComplete
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\StudentInformationSystem\MVC-SIS\MVC-SIS\MVC-SIS_Data\obj\Debug\MVC-SIS_Data.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\StudentInformationSystem\MVC-SIS\MVC-SIS\MVC-SIS_Data\obj\Debug\MVC-SIS_Data.pdb

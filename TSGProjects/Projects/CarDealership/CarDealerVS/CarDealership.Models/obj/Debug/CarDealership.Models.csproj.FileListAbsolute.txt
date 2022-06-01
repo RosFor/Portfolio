@@ -1,0 +1,5 @@
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\CarDealership1\CarDealerVS\CarDealership.Models\bin\Debug\CarDealership.Models.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\CarDealership1\CarDealerVS\CarDealership.Models\bin\Debug\CarDealership.Models.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\CarDealership1\CarDealerVS\CarDealership.Models\obj\Debug\CarDealership.Models.csproj.CoreCompileInputs.cache
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\CarDealership1\CarDealerVS\CarDealership.Models\obj\Debug\CarDealership.Models.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\CarDealership1\CarDealerVS\CarDealership.Models\obj\Debug\CarDealership.Models.pdb

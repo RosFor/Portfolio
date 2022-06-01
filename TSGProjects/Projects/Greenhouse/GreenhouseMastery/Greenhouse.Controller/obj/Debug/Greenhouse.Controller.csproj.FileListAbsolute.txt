@@ -1,0 +1,15 @@
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.Controller\bin\Debug\Greenhouse.Controller.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.Controller\bin\Debug\Greenhouse.Controller.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.Controller\bin\Debug\Greenhouse.BLL.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.Controller\bin\Debug\Greenhouse.Models.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.Controller\bin\Debug\Greenhouse.View.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.Controller\bin\Debug\Greenhouse.Data.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.Controller\bin\Debug\Greenhouse.BLL.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.Controller\bin\Debug\Greenhouse.Models.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.Controller\bin\Debug\Greenhouse.View.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.Controller\bin\Debug\Greenhouse.Data.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.Controller\obj\Debug\Greenhouse.Controller.csprojAssemblyReference.cache
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.Controller\obj\Debug\Greenhouse.Controller.csproj.CoreCompileInputs.cache
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.Controller\obj\Debug\Greenhouse.Controller.csproj.CopyComplete
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.Controller\obj\Debug\Greenhouse.Controller.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.Controller\obj\Debug\Greenhouse.Controller.pdb

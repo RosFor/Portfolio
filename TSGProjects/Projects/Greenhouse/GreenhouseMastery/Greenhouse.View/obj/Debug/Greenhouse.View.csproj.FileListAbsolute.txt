@@ -1,0 +1,9 @@
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.View\bin\Debug\Greenhouse.View.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.View\bin\Debug\Greenhouse.View.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.View\bin\Debug\Greenhouse.Models.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.View\bin\Debug\Greenhouse.Models.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.View\obj\Debug\Greenhouse.View.csprojAssemblyReference.cache
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.View\obj\Debug\Greenhouse.View.csproj.CoreCompileInputs.cache
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.View\obj\Debug\Greenhouse.View.csproj.CopyComplete
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.View\obj\Debug\Greenhouse.View.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.View\obj\Debug\Greenhouse.View.pdb

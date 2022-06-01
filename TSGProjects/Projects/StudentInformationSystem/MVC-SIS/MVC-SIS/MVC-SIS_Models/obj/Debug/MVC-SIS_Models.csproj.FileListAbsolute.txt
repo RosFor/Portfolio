@@ -1,0 +1,5 @@
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\StudentInformationSystem\MVC-SIS\MVC-SIS\MVC-SIS_Models\bin\Debug\MVC-SIS_Models.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\StudentInformationSystem\MVC-SIS\MVC-SIS\MVC-SIS_Models\bin\Debug\MVC-SIS_Models.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\StudentInformationSystem\MVC-SIS\MVC-SIS\MVC-SIS_Models\obj\Debug\MVC-SIS_Models.csproj.CoreCompileInputs.cache
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\StudentInformationSystem\MVC-SIS\MVC-SIS\MVC-SIS_Models\obj\Debug\MVC-SIS_Models.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\StudentInformationSystem\MVC-SIS\MVC-SIS\MVC-SIS_Models\obj\Debug\MVC-SIS_Models.pdb

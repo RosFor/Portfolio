@@ -1,0 +1,11 @@
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.BLL\bin\Debug\Greenhouse.BLL.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.BLL\bin\Debug\Greenhouse.BLL.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.BLL\bin\Debug\Greenhouse.Data.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.BLL\bin\Debug\Greenhouse.Models.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.BLL\bin\Debug\Greenhouse.Data.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.BLL\bin\Debug\Greenhouse.Models.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.BLL\obj\Debug\Greenhouse.BLL.csprojAssemblyReference.cache
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.BLL\obj\Debug\Greenhouse.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.BLL\obj\Debug\Greenhouse.BLL.csproj.CopyComplete
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.BLL\obj\Debug\Greenhouse.BLL.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\Greenhouse\GreenhouseMastery\Greenhouse.BLL\obj\Debug\Greenhouse.BLL.pdb

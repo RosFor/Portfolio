@@ -1,0 +1,9 @@
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\CarDealership1\CarDealerVS\CarDealership.Data\bin\Debug\CarDealership.Data.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\CarDealership1\CarDealerVS\CarDealership.Data\bin\Debug\CarDealership.Data.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\CarDealership1\CarDealerVS\CarDealership.Data\bin\Debug\CarDealership.Models.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\CarDealership1\CarDealerVS\CarDealership.Data\bin\Debug\CarDealership.Models.pdb
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\CarDealership1\CarDealerVS\CarDealership.Data\obj\Debug\CarDealership.Data.csprojAssemblyReference.cache
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\CarDealership1\CarDealerVS\CarDealership.Data\obj\Debug\CarDealership.Data.csproj.CoreCompileInputs.cache
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\CarDealership1\CarDealerVS\CarDealership.Data\obj\Debug\CarDealership.Data.csproj.CopyComplete
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\CarDealership1\CarDealerVS\CarDealership.Data\obj\Debug\CarDealership.Data.dll
+C:\Users\Sam\Portfolio-Repo\Portfolio\UpdatedStuff\Projects\CarDealership1\CarDealerVS\CarDealership.Data\obj\Debug\CarDealership.Data.pdb
