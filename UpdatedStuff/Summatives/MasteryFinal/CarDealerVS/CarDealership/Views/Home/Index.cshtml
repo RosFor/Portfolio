@@ -1,0 +1,38 @@
+﻿@model IEnumerable<CarDealership.Models.Vehicle>
+@{
+    ViewBag.Title = "Home";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Nav Bar Here</h2>
+            <p>Specials Jumbotron Here</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Featured Vehicles</h3>
+            @foreach (var vehicle in Model)
+            {
+                <div class="col-md-12">
+                    <p class="FeaturedVehicle"><strong>@vehicle.VehicleYear, @vehicle.VehicleModelID</strong></p>
+                    <p class="FeaturedVehicle">@vehicle.SalePrice.ToString("c")</p>
+                </div>
+            }
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

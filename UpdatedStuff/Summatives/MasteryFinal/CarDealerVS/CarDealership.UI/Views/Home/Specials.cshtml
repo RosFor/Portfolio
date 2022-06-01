@@ -1,0 +1,24 @@
+﻿@model IEnumerable<CarDealership.Models.Specials>
+@{
+    ViewBag.Title = "Specials";
+}
+<h3>@ViewBag.Message</h3>
+
+<div class="row">
+    <div>
+        @foreach (var specials in Model)
+        {
+            <div class="row" id="bordered">
+                <div>
+                    <div class="col-md-3">
+                        <p><img src="@Url.Content("~/Images/" + specials.SpecialsImageFile)" /></p>
+                    </div>
+                    <div class="col-md-9">
+                        <h3 class="specials">@specials.SpecialsTitle</h3>
+                        <h4 class="specials">@specials.SpecialsDescription</h4>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

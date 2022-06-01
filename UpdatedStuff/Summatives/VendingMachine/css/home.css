@@ -1,0 +1,51 @@
+/* Display - Functional */
+.grid-container {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 70% auto;
+}
+
+.header-span {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.right-span {
+  display: grid;
+  grid-rows: auto;
+  grid-column-start: 4;
+  grid-row-start: 2;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#itemTableDiv {
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+  'div div div'
+  'div div div'
+  'div div div';
+  grid-gap: 20px;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30% 30% 30% 30%;
+}
+
+/* Display - Aesthetics */
+.itemTable {
+  border: solid black;
+}
+
+.itemTable:hover {
+  background-color: red;
+}
+
+.btn {
+  margin-top: 10px;
+}
+.btn:hover {
+  border-color: red;
+  background-color: red;
+}

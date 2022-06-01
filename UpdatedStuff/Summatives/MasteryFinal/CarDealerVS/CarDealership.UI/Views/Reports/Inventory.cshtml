@@ -1,0 +1,66 @@
+﻿@model CarDealership.UI.Models.ReportViewModel
+
+@{
+    ViewBag.Title = "Report - Inventory";
+}
+
+<h3>@ViewBag.Message</h3>
+
+<div class="container">
+    <div class="col-md-6">
+        <h4>New Vehicles</h4>
+        <div id="bordered">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Count</th>
+                        <th>Stock Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var vehicle in Model.ReportNew)
+                    {
+                        <tr>
+                            <td>@vehicle.VehicleYear</td>
+                            <td>@vehicle.VehicleModel.Make.MakeName</td>
+                            <td>@vehicle.VehicleModel.ModelName</td>
+                            <td>@vehicle.VehicleModel.Count</td>
+                            <td>$@vehicle.MSRP</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h4>Used Vehicles</h4>
+        <div id="bordered">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Count</th>
+                        <th>Stock Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var vehicle in Model.ReportUsed)
+                    {
+                        <tr>
+                            <td>@vehicle.VehicleYear</td>
+                            <td>@vehicle.VehicleModel.Make.MakeName</td>
+                            <td>@vehicle.VehicleModel.ModelName</td>
+                            <td>@vehicle.VehicleModel.Count</td>
+                            <td>$@vehicle.MSRP</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

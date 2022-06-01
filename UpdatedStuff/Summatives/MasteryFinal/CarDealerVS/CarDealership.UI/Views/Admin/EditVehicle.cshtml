@@ -1,0 +1,112 @@
+﻿@model CarDealership.UI.Models.AdminEditVehicleVM
+
+@{
+    ViewBag.Title = "Edit Vehicle";
+}
+<h3>@ViewBag.Message</h3>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        @using (Html.BeginForm("EditVehicle", "Admin", FormMethod.Post, new { enctype = "multipart/form-data", id = "frmEditVehicle" }))
+        {
+            @Html.ValidationSummary()
+            @Html.HiddenFor(m => m.Vehicle.VehicleID, Model.Vehicle.VehicleID)
+            //@Html.HiddenFor(m => m.Vehicle.VehicleModel.VehicleModelID, Model.Vehicle.VehicleModel.VehicleModelID)
+            <div class="form-group">
+                <label>Make</label>
+                @Html.DropDownListFor(m => m.Vehicle.VehicleModel.Make.MakeID, Model.Make, "Select Make", new { @class = "form-control", id = "Make" })
+            </div>
+            <div class="form-group">
+                <label>Model</label>
+                @*@Html.DropDownListFor(m => m.Vehicle.VehicleModel.ModelName, Model.VehicleModel, new { @class = "form-control", id = "Make" })*@
+                <select class="form-control valid" id="Model" name="Vehicle.VehicleModel.VehicleModelID">
+                    <option value="@Model.Vehicle.VehicleModel.VehicleModelID" @*selected disabled*@>@Model.Vehicle.VehicleModel.ModelName</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Condition Type</label>
+                @Html.DropDownListFor(m => m.Vehicle.Condition.ConditionID, Model.Condition, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Body Style</label>
+                @Html.DropDownListFor(m => m.Vehicle.Body.BodyID, Model.BodyStyle, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Year</label>
+                @Html.TextBoxFor(m => m.Vehicle.VehicleYear, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Transmission</label>
+                @Html.DropDownListFor(m => m.Vehicle.Transmission.TransmissionID, Model.Transmission, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Color</label>
+                @Html.DropDownListFor(m => m.Vehicle.Color.ColorID, Model.Color, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Interior Color</label>
+                @Html.DropDownListFor(m => m.Vehicle.InteriorColor.InteriorColorID, Model.InteriorColor, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Mileage</label>
+                @Html.TextBoxFor(m => m.Vehicle.Mileage, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>VIN #</label>
+                @Html.TextBoxFor(m => m.Vehicle.VinNumber, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>MSRP</label>
+                @Html.TextBoxFor(m => m.Vehicle.MSRP, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Sale Price</label>
+                @Html.TextBoxFor(m => m.Vehicle.SalePrice, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                @Html.TextAreaFor(m => m.Vehicle.VehicleDescription, new { @class = "form-control" })
+            </div>
+            <div class="checkbox" onclick="if(this.checked == false){notFeatured()}">
+                <label>
+                    @Html.CheckBoxFor(m => m.Vehicle.IsFeatured) Feature this vehicle
+                </label>
+            </div>
+            <div class="form-group">
+                <img src="@Url.Content("~/Images/" + Model.Vehicle.VehicleImageFile)" />
+                <div class="form-group">
+                    <label>Replace Image</label>
+                    <input id="UploadImage" name="UploadImage" type="file" class="form-control" />
+                </div>
+            </div>
+            <div>
+                @Html.ActionLink("Delete", "DeleteVehicle", new { id = Model.Vehicle.VehicleID })
+                @*<input type="submit" value="Delete" onclick="return confirm('Are you sure you want to delete record with ID = @Model.Vehicle.VehicleID');" />*@
+                @*<a href="@Url.Action("DeleteVehicle", "Admin", new {id = Model.Vehicle.VehicleID})" onclick="return confirm('Are you sure?');">Delete</a>*@
+                <button type="submit" class="btn btn-primary" id="Submit">Save</button>
+            </div>
+        }
+    </div>
+</div>
+
+@section scripts
+{
+    @*<script>
+        $(document).ready(
+            function DeleteVehicle(vehicleID) {
+                alert("Here");
+                alert(vehicleID);
+                $.ajax({
+                    type: 'DELETE',
+                    url: 'http://localhost:44396/api/Admin/EditVehicle/' + vehicleID,
+                    success: function () {
+                        alert("Success");
+                    }
+                });
+            }
+        );
+    </script>*@
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/SiteAdminEditMakeModel.js")
+    @Scripts.Render("~/Scripts/SiteAdminValidate.js")
+}

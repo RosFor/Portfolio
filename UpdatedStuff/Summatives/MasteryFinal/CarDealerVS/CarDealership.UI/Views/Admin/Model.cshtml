@@ -1,0 +1,65 @@
+﻿@model CarDealership.UI.Models.VehicleModelVM
+@{
+    ViewBag.Title = "Models";
+}
+<h3>@ViewBag.Message</h3>
+
+<div class="row">
+    <div class="col-md-12" id="bordered">
+        @using (Html.BeginForm("Model", "Admin", FormMethod.Post, new { enctype = "multipart/form-data", id = "frmAddModel" }))
+        {
+            @Html.ValidationSummary()
+            @*@Html.HiddenFor(m => m.VehicleModel.Make.MakeID, new { Value = Model.VehicleModel.Make.MakeID })*@
+            @*@Html.HiddenFor(m => m.VehicleModel.DateAdded, new { Value = Model.VehicleModel.DateAdded })*@
+            <div class="col-md-3">
+                <label>New Model: </label>
+                @Html.TextBoxFor(m => m.VehicleModel.ModelName, new { @class = "form-control", placeholder = "Model Name", required = "required" })
+                @*@Html.ValidationMessageFor(m => m.VehicleModel.ModelName, null, new { @class = "field-validation-error", data_valmsg_for = "VehicleModel.ModelName" })*@
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                <label>Make: </label>
+                @Html.DropDownListFor(m => m.VehicleModel.Make.MakeID, Model.MakeList, new { @class = "form-control" })
+            </div>
+            <div>
+                <input type="hidden" id=@Model.VehicleModel.DateAdded value=@Model.VehicleModel.DateAdded>
+            </div>
+
+            /*m => m.MakeList, Model.MakeList*/
+            <div class="col-md-2 col-md-offset-1">
+                <button class="btn btn-primary" id="Submit">Save</button>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6" id="bordered">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>DateAdded</th>
+                    <th>User</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var vm in Model.VehicleModelList)
+                {
+                    <tr>
+                        <td>@vm.Make.MakeName</td>
+                        <td>@vm.ModelName</td>
+                        <td>@vm.DateAdded.ToString("MM/dd/yyyy")</td>
+                        <td>@vm.UserEmail</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/SiteAdminValidate.js")
+}

@@ -1,0 +1,45 @@
+﻿@model CarDealership.UI.Models.InventoryVM
+@*CarDealership.Models.Vehicle*@
+@{
+    ViewBag.Title = "Vehicle Details";
+}
+<h3>@ViewBag.Message</h3>
+
+<div class="row" id="bordered">
+    <div>
+        <div class="col-md-3">
+            <h5><strong>@Model.vehicle.VehicleYear @Model.vehicle.VehicleModel.Make.MakeName @Model.vehicle.VehicleModel.ModelName</strong></h5>
+            <p><img src="@Url.Content("~/Images/" + Model.vehicle.VehicleImageFile)" /></p>
+        </div>
+        <div class="col-md-3">
+            <p><strong>Body Style:</strong> @Model.vehicle.Body.BodyStyle</p>
+            <p><strong>Transmission:</strong> @Model.vehicle.Transmission.TransmissionType</p>
+            <p><strong>Color:</strong> @Model.vehicle.Color.ColorName</p>
+        </div>
+        <div class="col-md-3">
+            <p><strong>Interior:</strong> @Model.vehicle.InteriorColor.InteriorColorName</p>
+            <p><strong>Mileage:</strong> @Model.vehicle.Mileage</p>
+            <p><strong>Vin #:</strong> @Model.vehicle.VinNumber.ToUpper()</p>
+        </div>
+        <div class="col-md-3">
+            <p><strong>Sale Price:</strong> @Model.vehicle.SalePrice.ToString("c")</p>
+            <p><strong>MSRP:</strong> @Model.vehicle.MSRP.ToString("c")</p>
+        </div>
+        <div class="col-md-9">
+            <br />
+            <p><strong>Description:</strong> @Model.vehicle.VehicleDescription</p>
+        </div>
+        <div class="col-md-5 col-lg-offset-9">
+            @if (Model.vehicle.IsSold)
+            {
+                <h1><span class="badge badge-danger">SOLD</span></h1>
+            }
+            else
+            {
+                <div id="padded">
+                    <button class="btn btn-primary" onclick="location.href='@Url.Action("Contact", "Home", new { VinNumber = Model.vehicle.VinNumber })'">Contact Us</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>

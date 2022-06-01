@@ -1,0 +1,107 @@
+﻿@model CarDealership.UI.Models.PurchaseVehicleVM
+
+@{
+    ViewBag.Title = "Purchase Vehicle";
+}
+<h3>@ViewBag.Message</h3>
+
+<div class="row" id="bordered">
+    <div class="row col-md-3">
+        <div>
+            @Html.HiddenFor(m => m.Vehicle.VehicleID, Model.Vehicle.VehicleID)
+            <p><strong>@Model.Vehicle.VehicleYear @Model.Vehicle.VehicleModel.Make.MakeName @Model.Vehicle.VehicleModel.ModelName</strong></p>
+            <p><img src="@Url.Content("~/Images/" + Model.Vehicle.VehicleImageFile)" /></p>
+        </div>
+    </div>
+    <div class="row col-md-9">
+        <div class="col-md-3">
+            <p><strong>Body Style:</strong> @Model.Vehicle.Body.BodyStyle</p>
+            <p><strong>Transmission:</strong> @Model.Vehicle.Transmission.TransmissionType</p>
+            <p><strong>Color:</strong> @Model.Vehicle.Color.ColorName</p>
+        </div>
+        <div class="col-md-4">
+            <p><strong>Interior:</strong> @Model.Vehicle.InteriorColor.InteriorColorName</p>
+            <p><strong>Mileage:</strong> @Model.Vehicle.Mileage</p>
+            <p><strong>Vin #:</strong> @Model.Vehicle.VinNumber.ToUpper()</p>
+        </div>
+        <div class="col-md-2">
+            <p><strong>Sale Price:</strong> @Model.Vehicle.SalePrice.ToString("c")</p>
+            <p><strong>MSRP:</strong> @Model.Vehicle.MSRP.ToString("c")</p>
+        </div>
+    </div>
+    <div class="row col-md-9">
+        <p><strong>Description:</strong> @Model.Vehicle.VehicleDescription</p>
+    </div>
+</div>
+
+@if (Model.Vehicle.IsSold)
+{
+    <h1 id="centered"><span class="badge badge-danger">VEHICLE SOLD. CAN'T RE-PURCHASE A VEHICLE!</span></h1>
+}
+else
+{
+    <div class="row">
+        <h3>Sales Information.</h3>
+        <div class="col-md-4">
+            @using (Html.BeginForm("PurchaseVehicle", "Sales", FormMethod.Post, new { enctype = "multipart/form-data", id = "frmPurchaseVehicle" }))
+            {
+                @Html.ValidationSummary()
+                @Html.HiddenFor(m => m.Vehicle.VehicleID, Model.Vehicle.VehicleID)
+                @Html.HiddenFor(m => m.Vehicle.VehicleModel.Make.MakeID, Model.Vehicle.VehicleModel.Make.MakeID)
+                @Html.HiddenFor(m => m.Vehicle.SalePrice, Model.Vehicle.SalePrice)
+                @Html.HiddenFor(m => m.Vehicle.MSRP, Model.Vehicle.MSRP)
+                @Html.HiddenFor(m => m.Vehicle.IsSold, Model.Vehicle.IsSold = true)
+                @Html.HiddenFor(m => m.Vehicle.IsFeatured, Model.Vehicle.IsFeatured = false)
+                @*@Html.HiddenFor(m => m.Sale.Vehicle.VehicleID, Model.Sale.Vehicle.VehicleID)*@
+                <div class="form-group">
+                    <label>Name</label>
+                    @Html.TextBoxFor(m => m.Sale.CustomerName, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    @Html.TextBoxFor(m => m.Sale.CustomerPhone, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    @Html.TextBoxFor(m => m.Sale.CustomerEmail, new { @class = "form-control", @type = "email" })
+                </div>
+                <div class="form-group">
+                    <label>Street 1</label>
+                    @Html.TextBoxFor(m => m.Sale.CustomerStreet1, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Street 2</label>
+                    @Html.TextBoxFor(m => m.Sale.CustomerStreet2, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>City</label>
+                    @Html.TextBoxFor(m => m.Sale.CustomerCity, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>State</label>
+                    @Html.DropDownListFor(m => m.Sale.States.StateID, Model.States, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Zip Code</label>
+                    @Html.TextBoxFor(m => m.Sale.CustomerZip, new { @class = "form-control" })
+                </div>
+                <hr />
+                <div class="form-group">
+                    <label>Purchase Price</label>
+                    @Html.TextBoxFor(m => m.Sale.SalePurchasePrice, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Purchase Type</label>
+                    @Html.DropDownListFor(m => m.Sale.PurchaseType.PurchaseTypeID, Model.PurchaseTypes, new { @class = "form-control" })
+                </div>
+                <button class="btn btn-primary" id="Submit">Save</button>
+            }
+        </div>
+    </div>
+}
+@section scripts
+{
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/SiteAdminValidate.js")
+}
+

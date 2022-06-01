@@ -1,0 +1,16 @@
+#buttonDiv{
+  margin-top: 10px;
+  padding-top: 10px;
+}
+#hr{
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+#addFormDiv, #editFormDiv, #viewDVDForm{
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.form-control[readonly]{
+  background-color: white;
+  border: none;
+}

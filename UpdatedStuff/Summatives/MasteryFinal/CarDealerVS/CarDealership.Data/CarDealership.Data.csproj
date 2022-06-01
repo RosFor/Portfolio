@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2125097-5874-437E-9F0F-46B21C14D17A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CarDealership.Data</RootNamespace>
+    <AssemblyName>CarDealership.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADO\BodyRepositoryADO.cs" />
+    <Compile Include="ADO\ColorRepositoryADO.cs" />
+    <Compile Include="ADO\ConditionRepositoryADO.cs" />
+    <Compile Include="ADO\ContactRepositoryADO.cs" />
+    <Compile Include="ADO\InteriorColorRepositoryADO.cs" />
+    <Compile Include="ADO\MakeRepositoryADO.cs" />
+    <Compile Include="ADO\PurchaseTypesRepositoryADO.cs" />
+    <Compile Include="ADO\SaleRepositoryADO.cs" />
+    <Compile Include="ADO\SpecialsRepositoryADO.cs" />
+    <Compile Include="ADO\StatesRepositoryADO.cs" />
+    <Compile Include="ADO\TransmissionRepositoryADO.cs" />
+    <Compile Include="ADO\VehicleModelRepositoryADO.cs" />
+    <Compile Include="ADO\VehicleRepositoryADO.cs" />
+    <Compile Include="Factory\BodyRepositoryFactory.cs" />
+    <Compile Include="Factory\ColorRepositoryFactory.cs" />
+    <Compile Include="Factory\ConditionRepositoryFactory.cs" />
+    <Compile Include="Factory\ContactRepositoryFactory.cs" />
+    <Compile Include="Factory\InteriorColorRepositoryFactory.cs" />
+    <Compile Include="Factory\MakeRepositoryFactory.cs" />
+    <Compile Include="Factory\PurchaseTypesRepositoryFactory.cs" />
+    <Compile Include="Factory\SaleRepositoryFactory.cs" />
+    <Compile Include="Factory\SpecialsRepositoryFactory.cs" />
+    <Compile Include="Factory\StatesRepositoryFactory.cs" />
+    <Compile Include="Factory\TransmissionRepositoryFactory.cs" />
+    <Compile Include="Factory\VehicleModelRepositoryFactory.cs" />
+    <Compile Include="Factory\VehicleRepositoryFactory.cs" />
+    <Compile Include="Interface\IBodyRepository.cs" />
+    <Compile Include="Interface\IColorRepository.cs" />
+    <Compile Include="Interface\IConditionRepository.cs" />
+    <Compile Include="Interface\IContactRepository.cs" />
+    <Compile Include="Interface\IInteriorColorRepository.cs" />
+    <Compile Include="Interface\IMakeRepository.cs" />
+    <Compile Include="Interface\IPurchaseTypesRepository.cs" />
+    <Compile Include="Interface\ISaleRepository.cs" />
+    <Compile Include="Interface\ISpecialsRepository.cs" />
+    <Compile Include="Interface\IStatesRepository.cs" />
+    <Compile Include="Interface\ITransmissionRepository.cs" />
+    <Compile Include="Interface\IVehicleModelRepository.cs" />
+    <Compile Include="Interface\IVehicleRepository.cs" />
+    <Compile Include="Mock\BodyRepositoryMock.cs" />
+    <Compile Include="Mock\ColorRepositoryMock.cs" />
+    <Compile Include="Mock\ConditionRepositoryMock.cs" />
+    <Compile Include="Mock\ContactRepositoryMock.cs" />
+    <Compile Include="Mock\InteriorColorRepositoryMock.cs" />
+    <Compile Include="Mock\MakeRepositoryMock.cs" />
+    <Compile Include="Mock\PurchaseTypesRepositoryMock.cs" />
+    <Compile Include="Mock\SaleRepositoryMock.cs" />
+    <Compile Include="Mock\SpecialsRepositoryMock.cs" />
+    <Compile Include="Mock\StatesRepositoryMock.cs" />
+    <Compile Include="Mock\TransmissionRepositoryMock.cs" />
+    <Compile Include="Mock\VehicleModelRepositoryMock.cs" />
+    <Compile Include="Mock\VehicleRepositoryMock.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CarDealership.Models\CarDealership.Models.csproj">
+      <Project>{8a1e5644-32c4-45df-8928-9803af236ede}</Project>
+      <Name>CarDealership.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

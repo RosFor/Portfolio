@@ -1,0 +1,50 @@
+﻿@model CarDealership.UI.Models.MakeVM
+@{
+    ViewBag.Title = "Makes";
+}
+<h3>@ViewBag.Message</h3>
+
+<div class="row">
+    <div class="col-md-4" id="bordered">
+        @using (Html.BeginForm("Make", "Admin", FormMethod.Post, new { enctype = "multipart/form-data", id = "frmAddMake" }))
+        {
+            @Html.ValidationSummary()
+            @*@Html.HiddenFor(m => m.MakeList, new { Value = Model.MakeList })*@
+            @*@Html.HiddenFor(m => m.Make, new { Value = Model.Make.MakeName })*@
+        <div class="form-group">
+            <label>New Make: </label>
+            @Html.TextBoxFor(m => m.Make.MakeName, new { @class = "form-control", placeholder = "Make Name", required = "required" })
+            @Html.ValidationMessageFor(m => m.Make.MakeName, null, new { @class = "field-validation-error", data_valmsg_for = "Make.MakeName" })
+        </div>
+            <div>
+                <button class="btn btn-primary" id="Submit">Save</button>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2" id="bordered">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Make</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var make in Model.MakeList)
+                {
+                    <tr>
+                        <td>@make.MakeName</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/SiteAdminValidate.js")
+}

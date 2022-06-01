@@ -1,0 +1,82 @@
+﻿@model CarDealership.UI.Models.AdminAddVehicleVM
+
+@{
+    ViewBag.Title = "Add Vehicle";
+}
+<h3>@ViewBag.Message</h3>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        @using (Html.BeginForm("AddVehicle", "Admin", FormMethod.Post, new { enctype = "multipart/form-data", id = "frmAddVehicle" }))
+        {
+            @Html.ValidationSummary()
+            <div class="form-group">
+                <label>Make</label>
+                @Html.DropDownListFor(m => m.Vehicle.VehicleModel.Make.MakeID, Model.Make, "Select Make", new { @class = "form-control", id = "Make"})
+            </div>
+            <div class="form-group">
+                <label>Model</label>
+                <select class="form-control valid" id="Model" name="Vehicle.VehicleModel.VehicleModelID">
+                    <option value="0" selected disabled>Select Vehicle Model</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Condition Type</label>
+                @Html.DropDownListFor(m => m.Vehicle.Condition.ConditionID, Model.Condition, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Body Style</label>
+                @Html.DropDownListFor(m => m.Vehicle.Body.BodyID, Model.BodyStyle, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Year</label>
+                @Html.TextBoxFor(m => m.Vehicle.VehicleYear, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Transmission</label>
+                @Html.DropDownListFor(m => m.Vehicle.Transmission.TransmissionID, Model.Transmission, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Color</label>
+                @Html.DropDownListFor(m => m.Vehicle.Color.ColorID, Model.Color, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Interior Color</label>
+                @Html.DropDownListFor(m => m.Vehicle.InteriorColor.InteriorColorID, Model.InteriorColor, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Mileage</label>
+                @Html.TextBoxFor(m => m.Vehicle.Mileage, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>VIN #</label>
+                @Html.TextBoxFor(m => m.Vehicle.VinNumber, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>MSRP</label>
+                @Html.TextBoxFor(m => m.Vehicle.MSRP, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Sale Price</label>
+                @Html.TextBoxFor(m => m.Vehicle.SalePrice, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                @Html.TextAreaFor(m => m.Vehicle.VehicleDescription, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Picture</label>
+                <input id="UploadImage" name="UploadImage" type="file" class="form-control" />
+            </div>
+            <button class="btn btn-primary" id="Submit">Save</button>
+        }
+    </div>
+</div>
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/SiteMakeModel.js")
+    @Scripts.Render("~/Scripts/SiteAdminValidate.js")
+}
+
