@@ -49,34 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProdTests\ADOBodyTests.cs" />
-    <Compile Include="ProdTests\ADOColorTests.cs" />
-    <Compile Include="ProdTests\ADOConditionTests.cs" />
-    <Compile Include="ProdTests\ADOContactTests.cs" />
-    <Compile Include="ProdTests\ADOInteriorColorTests.cs" />
-    <Compile Include="ProdTests\ADOMakeTests.cs" />
-    <Compile Include="ProdTests\ADOPurchaseTypesTests.cs" />
-    <Compile Include="ProdTests\ADOSaleTests.cs" />
-    <Compile Include="ProdTests\ADOSpecialsTests.cs" />
-    <Compile Include="ProdTests\ADOStatesTests.cs" />
-    <Compile Include="ProdTests\ADOTransmissionTests.cs" />
-    <Compile Include="ProdTests\ADOVehicleModelTests.cs" />
-    <Compile Include="ProdTests\ADOVehicleTests.cs" />
     <Compile Include="ProdTests\CRUDVehicleTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QATests\MockBodyTests.cs" />
-    <Compile Include="QATests\MockColorTests.cs" />
-    <Compile Include="QATests\MockConditionTests.cs" />
-    <Compile Include="QATests\MockContactTests.cs" />
-    <Compile Include="QATests\MockInteriorColorTests.cs" />
-    <Compile Include="QATests\MockMakeTests.cs" />
-    <Compile Include="QATests\MockPurchaseTypesTests.cs" />
-    <Compile Include="QATests\MockSaleTests.cs" />
-    <Compile Include="QATests\MockSpecialsTests.cs" />
-    <Compile Include="QATests\MockStatesTests.cs" />
-    <Compile Include="QATests\MockTransmissionTests.cs" />
-    <Compile Include="QATests\MockVehicleModelTests.cs" />
-    <Compile Include="QATests\MockVehicleTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -23,14 +23,4 @@ $(document).ready(function () {
             }
         });
     };
-    /*function DeleteVehicle(id) {
-        var id = model.Vehicle.VehicleID
-        $.ajax({
-            type: 'POST',
-            url: 'http://http://localhost:44396/Admin/EditVehicle/' + id,
-            success: function () {
-                alert('Success');
-            }
-        });
-    };*/
 });

@@ -117,11 +117,7 @@ namespace CarDealership.UI.Controllers
         {
             if (ModelState.IsValid)
             {
-                /*
-                 var repo = VehicleRepositoryFactory.GetRepository();
-                repo.Insert(model.VehicleModel);
-                */
-
+                
                 VehicleModel vm = new VehicleModel();
 
                 Make make = new Make();

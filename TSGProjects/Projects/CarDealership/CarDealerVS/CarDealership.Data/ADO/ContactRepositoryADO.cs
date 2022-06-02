@@ -66,35 +66,5 @@ namespace CarDealership.Data.ADO
                 contact.ContactID = (int)param.Value;
             }
         }
-
-        /*public Contact GetByID(int contactID)
-        {
-            Contact contact = null;
-
-            using (var cn = new SqlConnection(Settings.GetConnectionString()))
-            {
-                SqlCommand cmd = new SqlCommand("ContactSelectID", cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-
-                cmd.Parameters.AddWithValue("@ContactID", contactID);
-
-                cn.Open();
-
-                using (SqlDataReader dr = cmd.ExecuteReader())
-                {
-                    if (dr.Read())
-                    {
-                        contact = new Contact();
-                        contact.ContactID = (int)dr["ContactID"];
-                        contact.ContactName = dr["ContactName"].ToString();
-                        contact.ContactEmail = dr["ContactEmail"].ToString();
-                        contact.ContactPhone = dr["ContactPhone"].ToString();
-                        contact.ContactMessage = dr["ContactMessage"].ToString();
-                    }
-                }
-            }
-
-            return contact;
-        }*/
     }
 }
